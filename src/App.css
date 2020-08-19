@@ -10,7 +10,25 @@
   width: 30%;
   padding-top: 0%;
   padding-bottom: 0%;
-  display: block;
   margin: 0 auto;
-  vertical-align: center;
+  display: block;
+}
+
+.App #coder {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  color: #213044;
+  padding-top: 10px;
+  padding-left: 150px;
+}
+
+.App #github-link {
+  text-decoration: none;
+  color: black;
+}
+
+.App #github-link:hover {
+  text-decoration: underline;
 }

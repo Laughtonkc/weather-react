@@ -48,9 +48,9 @@ export default function Form() {
           />
         </button>
       </form>
-      <div class="media">
-        <div class="media-body">
-          <h5 class="col-sm" id="main-city">
+      <div className="media">
+        <div className="media-body">
+          <h5 className="col-sm" id="main-city">
             {message}
           </h5>
         </div>

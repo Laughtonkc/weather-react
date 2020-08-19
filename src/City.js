@@ -3,24 +3,24 @@ import "./City.css";
 
 export default function City() {
   return (
-    <div class="media">
-      <div class="media-body">
+    <div className="media">
+      <div className="media-body">
         <p id="todays-date">Monday, August 21, 2020</p>
-        <div class="weather-tempature">
-          <div class="row">
-            <p class="col-6" id="current-temp">
+        <div className="weather-tempature">
+          <div className="row">
+            <p className="col-6" id="current-temp">
               61
             </p>
-            <span class="active">
-              <a href="/" class="col-.5" id="fahrenheit-main">
+            <span className="active">
+              <a href="/" className="col-.5" id="fahrenheit-main">
                 Fº
               </a>
             </span>
-            <a href="/" class="col-.5" id="slash-main">
+            <a href="/" className="col-.5" id="slash-main">
               /
             </a>
-            <span class="inactive">
-              <a href="/" class="col-.5" id="celsius-main">
+            <span className="inactive">
+              <a href="/" className="col-.5" id="celsius-main">
                 Cº
               </a>
             </span>
