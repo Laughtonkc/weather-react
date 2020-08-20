@@ -3,7 +3,7 @@ import "./Form.css";
 
 export default function Form() {
   let [city, setCity] = useState("");
-  let [message, setMessage] = useState("");
+  let [message, setMessage] = useState("London");
 
   function handelSubmit(event) {
     event.preventDefault();

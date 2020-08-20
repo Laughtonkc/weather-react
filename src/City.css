@@ -1,6 +1,6 @@
 #main-city {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 45px;
   text-align: center;
   padding-top: 6%;
@@ -9,7 +9,7 @@
 
 #todays-date {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 23px;
   text-align: center;
   padding-top: 1%;
@@ -18,7 +18,7 @@
 }
 #current-temp {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 44px;
   text-align: center;
   padding-left: 45%;
@@ -27,7 +27,7 @@
 
 #fahrenheit-main {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 22px;
   text-align: center;
   padding-top: 0px;
@@ -43,7 +43,7 @@
 
 #slash-main {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 22px;
   text-align: center;
   padding-top: 0px;
@@ -53,7 +53,7 @@
 }
 #celsius-main {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 22px;
   text-align: center;
   padding-top: 0px;

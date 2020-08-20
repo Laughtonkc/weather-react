@@ -18,15 +18,16 @@ export default function App() {
         />
         <Description />
       </div>
-      <p className="col-10" id="coder">
+      <footer className="col-12" id="coder">
         <a
           id="github-link"
           href="https://github.com/Laughtonkc/weather-react"
+          target="_blank"
         >
           Open Source code
         </a>
         <p> by Kelsey Laughton</p>
-      </p>
+      </footer>
     </div>
   );
 }

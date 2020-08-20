@@ -7,7 +7,7 @@ export default function Desciption() {
       <p className="col-sm-3" id="current-weather-attributes-description">
         Sunny Skies
       </p>
-      <p className="col-sm-3" id="current-weather-attributes-humidity">
+      <p className="col-sm-4" id="current-weather-attributes-humidity">
         humidity <span id="humidity"> 29% </span>
       </p>
       <p className="col-sm-3" id="current-weather-attributes-windspeed">

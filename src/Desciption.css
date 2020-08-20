@@ -1,6 +1,6 @@
 #current-weather-attributes-description {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 23px;
   text-align: center;
   padding-top: 2%;
@@ -9,7 +9,7 @@
 }
 #current-weather-attributes-humidity {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 23px;
   text-align: center;
   padding-top: 2%;
@@ -19,7 +19,7 @@
 
 #current-weather-attributes-windspeed {
   font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 23px;
   text-align: center;
   padding-top: 2%;
