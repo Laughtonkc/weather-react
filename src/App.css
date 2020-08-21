@@ -6,13 +6,6 @@
   background-color: #e9eef2;
 }
 
-.App #current-weather-img {
-  width: 30%;
-  padding-top: 0%;
-  padding-bottom: 0%;
-  margin: 0 auto;
-  display: block;
-}
 
 .App #coder {
   text-align: center;
