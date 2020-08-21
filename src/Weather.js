@@ -2,6 +2,7 @@ import React, { useState } from "react";
  import Loader from "react-loader-spinner";
 import "./Weather.css";
 import Axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather() {
   const [ready, setReady] = useState(false);
@@ -14,7 +15,7 @@ export default function Weather() {
       windSpeed: response.data.wind.speed,
       description: response.data.weather[0].description,
       city: response.data.name,
-      date: "Monday, August 21, 2020",
+      date: new Date(response.data.dt * 1000),
       icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
     });
     setReady(true);
@@ -31,7 +32,7 @@ export default function Weather() {
           >
             <img
               id="search-img"
-              src="https://i.dlpng.com/static/png/3964068-free-location-icon-white-png-375681-download-location-icon-white-marker-png-black-and-white-1200_1200_preview.webp"
+              src="https://www.pngkit.com/png/full/109-1093253_find-a-location-icon-png-white.png"
               alt="search"
             />
           </button>
@@ -62,7 +63,9 @@ export default function Weather() {
             </h5>
           </div>
         </div>
-    <p id="todays-date">{weatherData.date}</p>
+        <p id="todays-date">
+          <FormattedDate date={weatherData.date} />
+        </p>
         <div className="weather-tempature">
           <div className="row">
             <p className="col-6" id="current-temp">
