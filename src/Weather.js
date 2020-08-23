@@ -4,27 +4,44 @@ import "./Weather.css";
 import Axios from "axios";
 import FormattedDate from "./FormattedDate";
 
-export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
- 
+export default function Weather(props) {
+  const [weatherData, setWeatherData] = useState({ready: false});
+
+  const [city, setCity] = useState(props.defaultCity);
+
   function displayWeather(response) {
     setWeatherData({
+      ready: true,
       tempature: response.data.main.temp,
       humidity: response.data.main.humidity,
       windSpeed: response.data.wind.speed,
       description: response.data.weather[0].description,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
-      icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+      icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
     });
-    setReady(true);
+    
   }
 
-  if (ready) {
+  function search() {
+  const apiKey = "e225c6d111cb3447388ed224dda3872f";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+   Axios.get(apiUrl).then(displayWeather);
+  }
+
+  function handleSubmit(event) {
+    event.preventdefault();
+    search();
+    
+  }
+  function handlecityChange(event) {
+    setCity(event.target.value);
+  }
+
+  if (weatherData.ready) {
     return (
       <div>
-        <form id="search-for-city">
+        <form id="search-for-city" onSubmit={handleSubmit}>
           <button
             type="button"
             id="location"
@@ -42,6 +59,7 @@ export default function Weather() {
               type="search"
               placeholder="Search for a city..."
               autocomplete="off"
+              onChange={handlecityChange}
             />
           </span>
           <button
@@ -107,10 +125,7 @@ export default function Weather() {
       </div>
     );
   } else {
-    let apiKey = "e225c6d111cb3447388ed224dda3872f";
-    let city = "London"
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-    Axios.get(apiUrl).then(displayWeather);
+    search();
     return (
       <Loader
         id="loader"
