@@ -13,7 +13,6 @@ export default function App() {
         <a
           id="github-link"
           href="https://github.com/Laughtonkc/weather-react"
-          target="_blank"
         >
           Open Source code
         </a>
