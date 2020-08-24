@@ -4,6 +4,8 @@ import "./Weather.css";
 import Axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import TempatureChanger from "./TempatureChanger";
+
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -85,26 +87,7 @@ export default function Weather(props) {
         <p id="todays-date">
           <FormattedDate date={weatherData.date} />
         </p>
-        <div className="weather-tempature">
-          <div className="row">
-            <p className="col-6" id="current-temp">
-              {Math.round(weatherData.tempature)}
-            </p>
-            <span className="active">
-              <a href="/" className="col-.5" id="fahrenheit-main">
-                Fº
-              </a>
-            </span>
-            <a href="/" className="col-.5" id="slash-main">
-              /
-            </a>
-            <span className="inactive">
-              <a href="/" className="col-.5" id="celsius-main">
-                Cº
-              </a>
-            </span>
-          </div>
-        </div>
+        <TempatureChanger imperial={weatherData.tempature} />
         <div id="current-weather-img" className="col-6">
           <WeatherIcon code={weatherData.icon} />
         </div>
