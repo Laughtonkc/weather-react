@@ -3,6 +3,7 @@ import Loader from "react-loader-spinner";
 import "./Weather.css";
 import Axios from "axios";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -18,7 +19,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
-      icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      icon: response.data.weather[0].icon,
     });
     
   }
@@ -104,12 +105,9 @@ export default function Weather(props) {
             </span>
           </div>
         </div>
-        <img
-          id="current-weather-img"
-          className="col-6"
-          src={weatherData.icon}
-          alt={weatherData.description}
-        />
+        <div id="current-weather-img" className="col-6">
+          <WeatherIcon code={weatherData.icon} />
+        </div>
         <div className="row">
           <p className="col-sm-3" id="current-weather-attributes-description">
             {weatherData.description}
