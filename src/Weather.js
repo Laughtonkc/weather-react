@@ -5,7 +5,7 @@ import Axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import TempatureChanger from "./TempatureChanger";
-
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -61,7 +61,7 @@ export default function Weather(props) {
               id="search-city"
               type="search"
               placeholder="Search for a city..."
-              autocomplete="off"
+              autoComplete="off"
               onChange={handlecityChange}
             />
           </span>
@@ -102,6 +102,7 @@ export default function Weather(props) {
           <p className="col-sm-3" id="current-weather-attributes-windspeed">
             Wind Speed {Math.round(weatherData.windSpeed)}m/h
           </p>
+          <Forecast city={weatherData.city}/>
         </div>
       </div>
     );
