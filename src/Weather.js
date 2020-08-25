@@ -46,7 +46,7 @@ export default function Weather(props) {
       <div>
         <form id="search-for-city" onSubmit={handleSubmit}>
           <div className="row">
-            <span id="search-form" className="col-md-9 ml-5">
+            <span id="search-form" className="col-9">
               <input
                 id="search-city"
                 type="search"
@@ -99,17 +99,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return (
-      <div ClassName="loader">
-        <Loader
-          id="loader"
-          type="ThreeDots"
-          color="#00BFFF"
-          height={50}
-          width={50}
-          timeout={7000}
-        />
-      </div>
-    );
+    return null;
   }
 }

@@ -7,19 +7,19 @@ background: rgb(233,238,242);
 background: radial-gradient(circle, rgba(233,238,242,1) 10%, rgba(255,255,255,1) 100%);
 }
 
-@media (min-width: 500px) { 
- .App {
-   font-size: 18px;
- }
-}
 .App #coder {
   text-align: center;
   text-decoration: none;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   color: #213044;
   padding-top: 10px;
   padding-left: 100px;
+}
+@media (min-width: 400px) { 
+ .App #coder {
+   font-size: 15px;
+ }
 }
 
 .App #github-link {

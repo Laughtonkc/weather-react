@@ -14,13 +14,20 @@ padding-top: 25px;
   border-radius: 100px;
   border-color: #213044;
   border-width: 1px;
-  width: 70%;
-  min-width: 50px;
+  width: 60%;
   height: 35px;
   margin-left: 25%;
   padding-left: 20px;
   padding-right: 15px;
   vertical-align: middle;
+  
+}
+@media (min-width: 570px) { 
+#search-city {
+     width: 70%;
+       display: block;
+       margin: 0 auto;
+ }
 }
 
 #submit-button {
@@ -34,8 +41,12 @@ padding-top: 25px;
   vertical-align: middle;
   width: 16%;
   height: 35px;
-  display: block;
-  margin: auto 0;
+ 
+}
+@media (min-width: 570px) { 
+#submit-button {
+     width: 50%;
+ }
 }
 
 #submit-button:hover {
@@ -57,30 +68,41 @@ padding-top: 25px;
 #main-city {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 800;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   padding-top: 3%;
   color: #213044;
 }
+@media (min-width: 570px) { 
+#main-city {
+     font-size: 35px;
+ }
+}
 
+
+
+#current-temp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 45%;
+  color: #213044;
+}
+@media (min-width: 570px) { 
+#todays-date {
+     font-size: 35px;
+ }
+}
 #todays-date {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
   padding-top: 1%;
   padding-bottom: 2%;
   color: #213044;
 }
-#current-temp {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 800;
-  font-size: 35px;
-  text-align: center;
-  padding-left: 45%;
-  color: #213044;
-}
-
 #fahrenheit-main {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
@@ -122,45 +144,59 @@ padding-top: 25px;
   font-weight: 800;
 }
 
-.App #current-weather-img {
+#current-weather-img {
   width: 30%;
   padding-top: 0%;
   padding-bottom: 0%;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
   padding-left: 6%;
 }
 
 #current-weather-attributes-description {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   padding-top: 2%;
   padding-left: 20%;
   color: #213044;
 }
+@media (min-width: 570px) { 
+#current-weather-attributes-description {
+     font-size: 20px;
+ }
+}
+
 #current-weather-attributes-humidity {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   padding-top: 2%;
   padding-left: 20%;
   color: #213044;
 }
-
+@media (min-width: 570px) { 
+#current-weather-attributes-humidity {
+     font-size: 20px;
+ }
+}
 #current-weather-attributes-windspeed {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   padding-top: 2%;
   padding-left: 20%;
   color: #213044;
 }
+@media (min-width: 570px) { 
+#current-weather-attributes-humidity {
+     font-size: 20px;
+ }
+}
 
 .loader canvas {
-  display: block;
-  margin: 0 auto;
+  vertical-align: center;
 }

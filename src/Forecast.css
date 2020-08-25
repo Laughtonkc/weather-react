@@ -9,38 +9,48 @@
 .weatherForecast canvas {
   display: block;
   margin: 0 auto;
-
 }
 
 #day-of-the-week {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
   text-align: center;
   padding-bottom: 3px;
+}
+@media (min-width: 570px) { 
+ #day-of-the-week {
+     font-size: 17px;
+ }
 }
 
 #forecast-card {
   text-align: center;
 
 }
-@media (min-width: 570px) {
-  .card-text {
-    font-size: 15px;
-  }
-}
- #forecast-img {
-  width: 20%;
+
+ #forecast-img canvas{
+  width: 60%;
   display: block;
   margin: auto 25px;
+}
+@media (min-width: 400px) { 
+ .weatherForecast {
+   min-width: 60%;
+ }
 }
 
 #weeks-tempature {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 15px;
   padding-top: 3px;
   margin-bottom: 3px;
+}
+@media (min-width: 570px) { 
+ #weeks-tempature {
+     font-size: 18px;
+ }
 }
 
 #description-of-temp {
@@ -49,5 +59,10 @@
   margin-left: 10px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 14px;
+}
+@media (min-width: 570px) { 
+#description-of-temp {
+     font-size: 17px;
+ }
 }
