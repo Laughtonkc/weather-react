@@ -34,7 +34,7 @@
   display: block;
   margin: auto 25px;
 }
-@media (min-width: 400px) { 
+@media (min-width: 700px) { 
  .weatherForecast {
    min-width: 60%;
  }
