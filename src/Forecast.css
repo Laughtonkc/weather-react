@@ -34,7 +34,7 @@
   margin: auto 25px;
 }
 @media (min-width: 300px) {
-  .weatherForecast {
+  #forecast-img canvas {
     min-width: 60%;
   }
 }
