@@ -18,26 +18,25 @@
   text-align: center;
   padding-bottom: 3px;
 }
-@media (min-width: 570px) { 
- #day-of-the-week {
-     font-size: 17px;
- }
+@media (min-width: 570px) {
+  #day-of-the-week {
+    font-size: 17px;
+  }
 }
 
 #forecast-card {
   text-align: center;
-
 }
 
- #forecast-img canvas{
+#forecast-img canvas {
   width: 60%;
   display: block;
   margin: auto 25px;
 }
-@media (min-width: 700px) { 
- .weatherForecast {
-   min-width: 60%;
- }
+@media (min-width: 300px) {
+  .weatherForecast {
+    min-width: 60%;
+  }
 }
 
 #weeks-tempature {
@@ -47,10 +46,10 @@
   padding-top: 3px;
   margin-bottom: 3px;
 }
-@media (min-width: 570px) { 
- #weeks-tempature {
-     font-size: 18px;
- }
+@media (min-width: 570px) {
+  #weeks-tempature {
+    font-size: 18px;
+  }
 }
 
 #description-of-temp {
@@ -61,8 +60,8 @@
   font-weight: 500;
   font-size: 14px;
 }
-@media (min-width: 570px) { 
-#description-of-temp {
-     font-size: 17px;
- }
+@media (min-width: 570px) {
+  #description-of-temp {
+    font-size: 17px;
+  }
 }
