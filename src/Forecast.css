@@ -15,21 +15,18 @@
 #day-of-the-week {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   padding-bottom: 3px;
 }
 
 #forecast-card {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 500;
-  font-size: 13px;
   text-align: center;
 
 }
 @media (min-width: 570px) {
   .card-text {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
  #forecast-img {
@@ -41,7 +38,7 @@
 #weeks-tempature {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 3px;
   margin-bottom: 3px;
 }
@@ -52,5 +49,5 @@
   margin-left: 10px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
 }
