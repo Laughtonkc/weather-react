@@ -45,37 +45,28 @@ export default function Weather(props) {
     return (
       <div>
         <form id="search-for-city" onSubmit={handleSubmit}>
-          <button
-            type="button"
-            id="location"
-            className="col-3 ml-md-5 pl-4 pr-4 mr-md-3"
-          >
-            <img
-              id="search-img"
-              src="https://www.pngkit.com/png/full/109-1093253_find-a-location-icon-png-white.png"
-              alt="search"
-            />
-          </button>
-          <span id="search-form" className="col-sm-6 ml-5 ml-md-4 mr-2">
-            <input
-              id="search-city"
-              type="search"
-              placeholder="Search for a city..."
-              autoComplete="off"
-              onChange={handlecityChange}
-            />
-          </span>
-          <button
-            id="submit-button"
-            className="col-3 ml-md-3 pl-4 pr-4 mr-md-2"
-            type="submit"
-          >
-            <img
-              id="search-img"
-              src="https://www.vippng.com/png/full/493-4938160_magnifying-glass-png-white-search-icon-white-png.png"
-              alt="search"
-            />
-          </button>
+          <div className="row">
+            <span id="search-form" className="col-md-9 ml-5">
+              <input
+                id="search-city"
+                type="search"
+                placeholder="Search for a city..."
+                autoComplete="off"
+                onChange={handlecityChange}
+              />
+            </span>
+            <button
+              id="submit-button"
+              className="col-1 mr-5 "
+              type="submit"
+            >
+              <img
+                id="search-img"
+                src="https://www.vippng.com/png/full/493-4938160_magnifying-glass-png-white-search-icon-white-png.png"
+                alt="search"
+              />
+            </button>
+          </div>
         </form>
         <div className="media">
           <div className="media-body">
@@ -102,21 +93,23 @@ export default function Weather(props) {
           <p className="col-sm-3" id="current-weather-attributes-windspeed">
             Wind Speed {Math.round(weatherData.windSpeed)}m/h
           </p>
-          <Forecast city={weatherData.city}/>
+          <Forecast city={weatherData.city} />
         </div>
       </div>
     );
   } else {
     search();
     return (
-      <Loader
-        id="loader"
-        type="ThreeDots"
-        color="#00BFFF"
-        height={50}
-        width={50}
-        timeout={7000}
-      />
+      <div ClassName="loader">
+        <Loader
+          id="loader"
+          type="ThreeDots"
+          color="#00BFFF"
+          height={50}
+          width={50}
+          timeout={7000}
+        />
+      </div>
     );
   }
 }

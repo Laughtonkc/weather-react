@@ -1,58 +1,40 @@
 
 
 #search-for-city {
-  padding-top: 25px;
-  background-color: #e9eef2;
-}
-
-#location {
-  text-align: center;
-  border-radius: 5px;
-  background: #213044;
-  border-color: #213044;
-  border-width: 2px;
-  color: #ffff;
-  vertical-align: middle;
-  width: auto;
-  height: 32px;
-}
-
-#location:hover {
-  background: #213044;
-  border-color: #213044;
-  opacity: 90%;
-  border-width: 2px;
-  vertical-align: middle;
-  text-align: center;
+padding-top: 25px;
 }
 
 #search-city {
   font-family: "Noto Sans JP", sans-serif;
   font-style: italic;
-  vertical-align: center;
+  display: block;
+  margin: 0 auto;
   font-weight: 300;
   color: #707070;
-  border-radius: 5px;
+  border-radius: 100px;
   border-color: #213044;
   border-width: 1px;
-  width: 50%;
+  width: 70%;
   min-width: 50px;
-  height: 32px;
-  padding-left: 10px;
-  padding-right: 20px;
+  height: 38px;
+  margin-left: 25%;
+  padding-left: 20px;
+   vertical-align: middle;
 }
 
 #submit-button {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: 100px;
   background: #213044;
   border-color: 213044;
   border-width: 2px;
   color: #ffff;
   vertical-align: middle;
-  width: auto;
-  height: 32px;
+  width: 16%;
+  height: 34px;
+  display: block;
+  margin: auto 0;
 }
 
 #submit-button:hover {
@@ -175,4 +157,9 @@
   padding-top: 2%;
   padding-left: 20%;
   color: #213044;
+}
+
+.loader canvas {
+  display: block;
+  margin: 0 auto;
 }
