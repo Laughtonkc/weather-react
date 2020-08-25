@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Loader from "react-loader-spinner";
 import "./Weather.css";
 import Axios from "axios";
 import FormattedDate from "./FormattedDate";
