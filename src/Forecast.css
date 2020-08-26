@@ -5,19 +5,17 @@
    margin: 0 auto;
   
 }
+@media (min-width: 570px) {
+ .weatherForecast {
+   display: flex;
+  }
+}
 
 .weatherForecast canvas {
-   display: flex;
+   display: block;
      margin: 0 auto;
 
 
-}
-@media (min-width: 200px) {
-  .weatherForecast canvas {
-     display: block;
-  margin: 0,auto;
-    
-  }
 }
 
 #day-of-the-week {
