@@ -1,21 +1,6 @@
-.weatherForecast {
-  text-align: center;
-  min-width: 50px;
-   display: block;
-   margin: 0 auto;
-  
-}
-@media (min-width: 570px) {
- .weatherForecast {
-   display: flex;
-  }
-}
-
 .weatherForecast canvas {
    display: block;
      margin: 0 auto;
-
-
 }
 
 #day-of-the-week {
@@ -25,24 +10,26 @@
   text-align: center;
   padding-bottom: 3px;
 }
+
 @media (min-width: 570px) {
   #day-of-the-week {
     font-size: 17px;
   }
 }
 
+
 #forecast-card {
   text-align: center;
   display: block;
   margin: 0 auto;
-  padding-left: 3%;
   padding-top: 10px;
 }
 
+
 #forecast-img canvas {
-  width: 40%;
+  width: 50%;
   display: block;
-  margin: auto 29%;
+  margin: auto 20%;
 }
 @media (min-width: 570px) {
   #forecast-img canvas {

@@ -45,7 +45,7 @@ function hours() {
         />
       </span>
       <p id="weeks-tempature">
-        <span className="forecast-temperature">
+        <span id="forecast-temperature">
           {Math.round(props.data.main.temp)}º
         </span>
       </p>
