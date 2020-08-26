@@ -7,15 +7,15 @@
 }
 
 .weatherForecast canvas {
-  display: block;
-  margin: 0,auto;
-
-}
-@media (min-width: 570px) {
-  .weatherForecast canvas {
-     display: flex;
+   display: flex;
      margin: 0 auto;
 
+
+}
+@media (min-width: 200px) {
+  .weatherForecast canvas {
+     display: block;
+  margin: 0,auto;
     
   }
 }
@@ -37,12 +37,14 @@
   text-align: center;
   display: block;
   margin: 0 auto;
+  padding-left: 3%;
+  padding-top: 10px;
 }
 
 #forecast-img canvas {
   width: 40%;
   display: block;
-  margin: auto 20%;
+  margin: auto 29%;
 }
 @media (min-width: 570px) {
   #forecast-img canvas {

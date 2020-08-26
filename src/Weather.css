@@ -192,7 +192,7 @@ vertical-align: center;
   color: #213044;
 }
 @media (min-width: 570px) { 
-#current-weather-attributes-humidity {
+#current-weather-attributes-windspeed {
      font-size: 20px;
  }
 }
