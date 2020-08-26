@@ -19,8 +19,7 @@ vertical-align: center;
   height: 35px;
   padding-left: 20px;
   padding-right: 15px;
-  
-  
+  vertical-align: center;
 }
 @media (min-width: 570px) { 
 #search-city {
