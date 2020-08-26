@@ -34,10 +34,9 @@ function hours() {
 }
 
   return (
-      
     <div className="col" id="forecast-card">
       <h5 id="day-of-the-week">{hours()}</h5>
-      <span id="forecast-img">
+      <span id="forecast-img" className="flex-wrap">
         <ReactAnimatedWeather
           icon={codeMapping[props.data.weather[0].icon]}
           color="#213044"
@@ -50,9 +49,7 @@ function hours() {
           {Math.round(props.data.main.temp)}º
         </span>
       </p>
-      <p id="description-of-temp">
-        {props.data.weather[0].description}
-      </p>
+      <p id="description-of-temp">{props.data.weather[0].description}</p>
     </div>
   );
 }

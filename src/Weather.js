@@ -44,23 +44,19 @@ export default function Weather(props) {
     return (
       <div>
         <form id="search-for-city" onSubmit={handleSubmit}>
-          <div className="row align-items-center">
-            <div id="search-form" className="col-8 ml-5 ">
+          <div className="row">
+            <div className="col"></div>
+            <div id="search-form" className="col-md-7">
               <input
                 id="search-city"
                 type="search"
                 placeholder="Search for a city..."
                 autoComplete="off"
                 onChange={handlecityChange}
-                ClassName="form-control "
               />
             </div>
-            <div className="col-3">
-              <button
-                id="submit-button"
-                className="mr-5"
-                type="submit"
-              >
+            <div className="col-md-3">
+              <button id="submit-button" type="submit">
                 <img
                   id="search-img"
                   src="https://www.vippng.com/png/full/493-4938160_magnifying-glass-png-white-search-icon-white-png.png"
