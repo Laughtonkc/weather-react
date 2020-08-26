@@ -37,9 +37,10 @@ vertical-align: center;
   border-color: 213044;
   border-width: 2px;
   color: #ffff;
-  vertical-align: middle;
-  width: 16%;
+  width: 20%;
   height: 35px;
+  display: block;
+  margin: 0 auto;
  
 }
 @media (min-width: 570px) { 
