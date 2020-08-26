@@ -13,7 +13,7 @@
 }
 @media (min-width: 570px) {
   .weatherForecast canvas {
-     display: flex;
+     display: wrap;
 
     
   }
