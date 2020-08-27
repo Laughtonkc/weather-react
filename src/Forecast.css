@@ -26,14 +26,12 @@
 }
 
 
-#forecast-img canvas {
-  width: 50%;
-  display: block;
+#forecast-img canvas  {
+  display: wrap;
   margin: auto 20%;
 }
 @media (min-width: 570px) {
   #forecast-img canvas {
-    min-width: 60%;
     display: block;
   margin: auto 20%;
   }

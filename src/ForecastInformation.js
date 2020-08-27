@@ -40,7 +40,7 @@ function hours() {
         <ReactAnimatedWeather
           icon={codeMapping[props.data.weather[0].icon]}
           color="#213044"
-          size={65}
+          size={70}
           animate={true}
         />
       </span>

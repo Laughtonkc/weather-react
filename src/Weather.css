@@ -75,11 +75,9 @@ vertical-align: center;
 }
 @media (min-width: 570px) { 
 #main-city {
-     font-size: 35px;
+     font-size: 34px;
  }
 }
-
-
 
 #current-temp {
   font-family: "Noto Sans JP", sans-serif;
@@ -90,14 +88,14 @@ vertical-align: center;
   color: #213044;
 }
 @media (min-width: 570px) { 
-#todays-date {
-     font-size: 35px;
+#current-temp {
+     font-size: 37px;
  }
 }
 #todays-date {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
-  font-size: 23px;
+  font-size: 22px;
   text-align: center;
   padding-top: 1%;
   padding-bottom: 2%;
