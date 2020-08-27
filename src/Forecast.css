@@ -27,6 +27,7 @@
 
 
 #forecast-img canvas  {
+  width: 40%;
   display: wrap;
   margin: auto 20%;
 }
