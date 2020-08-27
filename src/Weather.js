@@ -92,8 +92,8 @@ export default function Weather(props) {
           <p className="col-sm-3" id="current-weather-attributes-windspeed">
             Wind Speed {Math.round(weatherData.windSpeed)}m/h
           </p>
-          <Forecast city={weatherData.city} />
         </div>
+        <Forecast city={weatherData.city} />
       </div>
     );
   } else {
